@@ -1,37 +1,3 @@
-local msg = Instance.new("Message",workspace)
-msg.Text = "欢迎使用HE脚本"
-wait(2.5)
-msg:Destroy()
-local msg = Instance.new("Message",workspace)
-msg.Text = "HE脚本作者：鹤畅"
-wait(1.8)
-msg:Destroy()
-local msg = Instance.new("Message",workspace)
-msg.Text = "《更新》"
-wait(1.2)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载中10%"
-wait(1.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载中30%"
-wait(1.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载中50%"
-wait(1.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载中80%"
-wait(1.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载中99%"
-wait(5.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "加载完毕"
-wait(1.0)
-local msg = Instance.new("Message",workspace)
-msg.Text = "请您愉快的玩耍吧"
-wait(1.0)
-msg:Destroy()
-
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
 local Tab =Window:MakeTab({
