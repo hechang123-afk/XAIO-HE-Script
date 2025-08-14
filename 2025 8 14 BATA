@@ -1,35 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/renlua/block/main/UI/%E7%8C%8E%E6%88%B7%E5%BA%A7.lua')))()
 
-local Tab =Window:MakeTab({
-
-	Name = "公告",
-
-	Icon = "rbxassetid://4483345998",
-
-	PremiumOnly = false
-
-})
-
-Tab:AddButton({
-
-	Name = "复制作者QQ",
-
-	Callback = function()
-
-     setclipboard("806672492")
-
-  	end
-
-})
-
-OrionLib:MakeNotification({
-	Name = "HE脚本中心脚本",
-	Content = "欢迎使用HE脚本中心",
-	Image = "rbxassetid://4483345998",
-	Time = 2
-
-})
-
 local Tab = Window:MakeTab({
 
     Name = "通用",
