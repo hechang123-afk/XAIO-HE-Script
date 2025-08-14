@@ -1,0 +1,211 @@
+local msg = Instance.new("Message",workspace)
+msg.Text = "欢迎使用HE脚本"
+wait(2.5)
+msg:Destroy()
+local msg = Instance.new("Message",workspace)
+msg.Text = "HE脚本作者：鹤畅"
+wait(1.8)
+msg:Destroy()
+local msg = Instance.new("Message",workspace)
+msg.Text = "《更新》"
+wait(1.2)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载中10%"
+wait(1.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载中30%"
+wait(1.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载中50%"
+wait(1.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载中80%"
+wait(1.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载中99%"
+wait(5.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "加载完毕"
+wait(1.0)
+local msg = Instance.new("Message",workspace)
+msg.Text = "请您愉快的玩耍吧"
+wait(1.0)
+msg:Destroy()
+
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+
+local Tab =Window:MakeTab({
+
+	Name = "公告",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+Tab:AddButton({
+
+	Name = "复制作者QQ",
+
+	Callback = function()
+
+     setclipboard("806672492")
+
+  	end
+
+})
+
+OrionLib:MakeNotification({
+	Name = "HE脚本中心脚本",
+	Content = "欢迎使用HE脚本中心",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+
+})
+
+local Tab = Window:MakeTab({
+
+    Name = "通用",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "鹤畅创作"
+
+})
+
+Tab:AddSlider({
+
+	Name = "速度",
+
+	Min = 16,
+
+	Max = 200,
+
+	Default = 16,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+	end    
+
+})
+
+Tab:AddSlider({
+
+	Name = "跳跃高度",
+
+	Min = 50,
+
+	Max = 200,
+
+	Default = 50,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end    
+
+})
+
+Tab:AddTextbox({
+
+	Name = "跳跃高度设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end
+
+})
+
+Tab:AddTextbox({
+
+	Name = "移动速度设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+	end
+
+})
+
+Tab:AddTextbox({
+
+	Name = "重力设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Workspace.Gravity = Value
+
+	end
+
+})
+
+Tab:AddToggle({
+
+	Name = "夜视",
+
+	Default = false,
+
+	Callback = function(Value)
+
+		if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+		end
+
+	end
+
+})
+
+Tab:AddButton({
+
+	Name = "飞行V3（隐藏）",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+
+  	end    
+
+})
