@@ -1,0 +1,108 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "HE脚本中心（正在开启中）",
+    Text = "HE脚本中心正在加载（反挂机已开启）",
+    Duration = 5, 
+})
+print("反挂机开启")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
+local Window = OrionLib:MakeWindow({Name = "HE脚本中心", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用HE脚本中心", ConfigFolder = "欢迎使用HE脚本中心 会持续更新"})
+local about = Window:MakeTab({
+    Name = "HE脚本",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+local Tab = Window:MakeTab({
+  Name = "通用脚本",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "飞行v3",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "踢人",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+
+end
+})
+Tab:AddButton({
+	Name = "打飞机（R6）",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw
+
+end
+})
+Tab:AddButton({
+	Name = "打飞机（R15）",
+	Callback = function()                                  
+
+loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+
+end
+})
+Tab:AddButton({
+	Name = "后门v6x",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "旋转",
+	Callback = function()
+	
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "夜视",
+	Callback = function()
+	
+if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+		
+end
+})
+
+Tab:AddButton({
+	Name = "电脑键盘",
+	Callback = function()
+	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "踏空",
+	Callback = function()
+	
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
